@@ -22,6 +22,6 @@
   </a>
 </div>
 </div> 
-
+<?php include("fcategories.php")?>
 <?php include("Components/_footer.php"); ?>
 
