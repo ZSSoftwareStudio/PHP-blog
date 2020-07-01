@@ -98,7 +98,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="_usersignup.php" method="POST">
+        <form action="Components/_usersignup.php" method="POST">
   <div class="form-group">
     <label for="exampleInputName">Username</label>
     <input type="text" class="form-control" id="exampleInputName" name="name" aria-describedby="nameHelp">

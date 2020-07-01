@@ -10,11 +10,11 @@ if($uname == "" or $email == "" or $password == ""){
      <script>alert('All fields are required');</script>
    ";
 }else{
-   include("Components/_conn.php");
+   include("_conn.php");
    $sql = "INSERT INTO `users` (`username`, `email`, `password`) VALUES ('".$uname."', '".$email."', '".$password."');";
    if(mysqli_query($conn, $sql)){
        echo '
-           <script>alert("Your account succesfully created!");window.location="index.php";</script>
+           <script>alert("Your account succesfully created!");window.location="../index.php";</script>
        ';
    }
 }
