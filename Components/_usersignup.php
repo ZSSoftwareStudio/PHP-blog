@@ -13,7 +13,8 @@ if($uname == "" or $email == "" or $password == ""){
    include("_conn.php");
    $sql = "INSERT INTO `users` (`username`, `email`, `password`) VALUES ('".$uname."', '".$email."', '".$password."');";
    if(mysqli_query($conn, $sql)){
-       echo '
+      setcookie('user', $uname, time() + 31536000, "/" );
+      echo '
            <script>alert("Your account succesfully created!");window.location="../index.php";</script>
        ';
    }
