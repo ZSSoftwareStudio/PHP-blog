@@ -65,7 +65,7 @@
             Welcome '. $_COOKIE["user"] .'
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Log Out</a>
+            <a class="dropdown-item" href="logout.php">Log Out</a>
             
           </div>
         </button>   
