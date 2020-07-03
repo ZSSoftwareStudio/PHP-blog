@@ -59,7 +59,17 @@
         </div>
         ';
   } else {
-    echo "";
+    echo '   
+        <button class="btn btn-success text-white dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Welcome '. $_COOKIE["user"] .'
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Log Out</a>
+            
+          </div>
+        </button>   
+    ';
   }
     
   
