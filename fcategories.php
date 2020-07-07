@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <h5 class="card-title">' . $row['name'] . '</h5>
                     <p class="card-text">' . substr($row['description'], 0, 110) . '...</p>
-                    <a href="#" class="btn btn-primary">View Category</a>
+                    <a class="btn btn-primary" href="/blog/category.php?category='.$row['name'].'">View Category</a>
                 </div>
             </div>
         </div>
